@@ -1,0 +1,682 @@
+2025-12-19 17:37:07 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Request.php:331
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2025-12-19 17:37:07 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_HOST' => 'tz5.local'
+    'HTTP_REFERER' => 'https://tz5.local/api/v1/tasks/\''
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_POSTMAN_TOKEN' => 'a27cb4ad-1b35-41f0-a4b9-b3025fc2e3ba'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.51.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '33932'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/\'/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155027.2862
+    'REQUEST_TIME' => 1766155027
+]
+2025-12-19 17:37:09 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/tasks/f". in /var/www/vendor/yiisoft/yii2/base/Module.php:564
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/tasks/f', Array)
+#1 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2025-12-19 17:37:09 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_HOST' => 'tz5.local'
+    'HTTP_REFERER' => 'https://tz5.local/api/v1/tasks/f'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_POSTMAN_TOKEN' => '7d991efc-c16e-4ec6-b3df-3a195f349793'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.51.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '33932'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/f/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155029.0516
+    'REQUEST_TIME' => 1766155029
+]
+2025-12-19 17:46:45 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/task/options in /var/www/vendor/yiisoft/yii2/base/Controller.php:155
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Module.php(555): yii\base\Controller->runAction('options', Array)
+#1 /var/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/task/options', Array)
+#2 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2025-12-19 17:46:45 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_CONTENT_LENGTH' => '5'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'tz5.local'
+    'HTTP_POSTMAN_TOKEN' => 'd5e39f74-bcf5-48b1-86a3-ca3f593b8f71'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.51.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '60216'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => '5'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155605.4244
+    'REQUEST_TIME' => 1766155605
+]
+2025-12-19 17:47:05 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/task/options in /var/www/vendor/yiisoft/yii2/base/Controller.php:155
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Module.php(555): yii\base\Controller->runAction('options', Array)
+#1 /var/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/task/options', Array)
+#2 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2025-12-19 17:47:05 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_CONTENT_LENGTH' => '8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'tz5.local'
+    'HTTP_POSTMAN_TOKEN' => '6649095f-5fa9-4bd3-a3f5-0a3db6e14a10'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.51.0'
+    'HTTP_CONTENT_TYPE' => 'text/plain'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '60216'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => '8'
+    'CONTENT_TYPE' => 'text/plain'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155625.7008
+    'REQUEST_TIME' => 1766155625
+]
+2025-12-19 17:47:11 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/task/options in /var/www/vendor/yiisoft/yii2/base/Controller.php:155
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Module.php(555): yii\base\Controller->runAction('options', Array)
+#1 /var/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/task/options', Array)
+#2 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2025-12-19 17:47:11 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'tz5.local'
+    'HTTP_POSTMAN_TOKEN' => 'ed35d9d8-07c1-4868-b1b8-98a12bc912c6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.51.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '60216'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155631.3504
+    'REQUEST_TIME' => 1766155631
+]
+2025-12-19 17:47:21 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/task/options in /var/www/vendor/yiisoft/yii2/base/Controller.php:155
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Module.php(555): yii\base\Controller->runAction('options', Array)
+#1 /var/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/task/options', Array)
+#2 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2025-12-19 17:47:21 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_CONTENT_LENGTH' => '159'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------184763053631513515746218'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'tz5.local'
+    'HTTP_POSTMAN_TOKEN' => '80a539b1-34fe-448d-b774-264d21fa08b8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.51.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '60216'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => '159'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------184763053631513515746218'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155641.2394
+    'REQUEST_TIME' => 1766155641
+]
+2025-12-19 17:47:58 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Request.php:331
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2025-12-19 17:47:58 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '020a95fcde96c3665a47953f547a281eef50fb4757e87f5a28236146a7a189b2a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"igzRK4LYt1BG8vm4qtNZzP9XVYodDtbK\",2592000]\";}'
+    'advanced-backend' => '2fb2e2c980c671906c5f400c96cc6403'
+    '_csrf' => 'b20a20ff7e77be8eeb23bf9ef49c166d676ee7fc334434d3db8f260fb9f32adba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SnYFroouQCoEkksmvKEHR0euBdF-baXx\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => '_identity-backend=020a95fcde96c3665a47953f547a281eef50fb4757e87f5a28236146a7a189b2a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22igzRK4LYt1BG8vm4qtNZzP9XVYodDtbK%22%2C2592000%5D%22%3B%7D; advanced-backend=2fb2e2c980c671906c5f400c96cc6403; _csrf=b20a20ff7e77be8eeb23bf9ef49c166d676ee7fc334434d3db8f260fb9f32adba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SnYFroouQCoEkksmvKEHR0euBdF-baXx%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0'
+    'HTTP_HOST' => 'tz5.local'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '56728'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/delete/27/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155678.1753
+    'REQUEST_TIME' => 1766155678
+]
+2025-12-19 17:48:04 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/tasks/create". in /var/www/vendor/yiisoft/yii2/base/Module.php:564
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/tasks/create', Array)
+#1 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2025-12-19 17:48:04 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '020a95fcde96c3665a47953f547a281eef50fb4757e87f5a28236146a7a189b2a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"igzRK4LYt1BG8vm4qtNZzP9XVYodDtbK\",2592000]\";}'
+    'advanced-backend' => '2fb2e2c980c671906c5f400c96cc6403'
+    '_csrf' => 'b20a20ff7e77be8eeb23bf9ef49c166d676ee7fc334434d3db8f260fb9f32adba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SnYFroouQCoEkksmvKEHR0euBdF-baXx\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => '_identity-backend=020a95fcde96c3665a47953f547a281eef50fb4757e87f5a28236146a7a189b2a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22igzRK4LYt1BG8vm4qtNZzP9XVYodDtbK%22%2C2592000%5D%22%3B%7D; advanced-backend=2fb2e2c980c671906c5f400c96cc6403; _csrf=b20a20ff7e77be8eeb23bf9ef49c166d676ee7fc334434d3db8f260fb9f32adba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SnYFroouQCoEkksmvKEHR0euBdF-baXx%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0'
+    'HTTP_HOST' => 'tz5.local'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '56728'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/create/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155684.734
+    'REQUEST_TIME' => 1766155684
+]
+2025-12-19 17:48:49 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/task/options in /var/www/vendor/yiisoft/yii2/base/Controller.php:155
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Module.php(555): yii\base\Controller->runAction('options', Array)
+#1 /var/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/task/options', Array)
+#2 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/base/Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2025-12-19 17:48:49 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '470b298a160c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_IDE_CONFIG' => 'serverName=tz5.local'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.3.7'
+    'GPG_KEYS' => '1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.3.7.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/vendor/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www'
+    'PHP_SHA256' => 'd53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a'
+    'LC_CTYPE' => 'C.UTF-8'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'USER' => 'www-data'
+    'HTTP_CONTENT_LENGTH' => '120'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'tz5.local'
+    'HTTP_POSTMAN_TOKEN' => 'ffbfb13d-f411-4eae-b2fa-8f70b5652255'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.51.0'
+    'HTTP_CONTENT_TYPE' => 'text/plain'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'tz5.local'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '172.20.0.5'
+    'REMOTE_PORT' => '56376'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.29.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTPS' => 'on'
+    'REQUEST_SCHEME' => 'https'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'DOCUMENT_URI' => '/api/web/index.php'
+    'CONTENT_LENGTH' => '120'
+    'CONTENT_TYPE' => 'text/plain'
+    'REQUEST_METHOD' => 'PUT'
+    'QUERY_STRING' => ''
+    'SCRIPT_NAME' => '/api/web/index.php'
+    'REQUEST_URI' => '/api/v1/tasks/'
+    'SCRIPT_FILENAME' => '/var/www/api/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1766155729.7036
+    'REQUEST_TIME' => 1766155729
+]
