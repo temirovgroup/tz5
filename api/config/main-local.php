@@ -2,7 +2,22 @@
 
 declare(strict_types=1);
 
-$config = [];
+$config = [
+  'components' => [
+    'cache' => [
+      'class' => 'yii\caching\MemCache', // use DummyCache for no real caching
+      'keyPrefix' => 'exampleapp',
+      'useMemcached' => true,
+      'servers' => [
+        'master' => [
+          'host' => 'memcached',
+          'port' => 11211,
+          'weight' => 60,
+        ],
+      ],
+    ],
+  ],
+];
 
 if (YII_ENV_DEV && !YII_ENV_TEST) {
   // configuration adjustments for 'dev' environment

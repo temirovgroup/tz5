@@ -138,7 +138,7 @@ class TaskController extends BaseApiController
   }
   
   #[OA\Post(
-    path: '/v1/tasks/create',
+    path: '/v1/tasks/',
     summary: 'Создать новую задачу',
     tags: ['Tasks'],
     requestBody: new OA\RequestBody(
